@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/8ca2060266.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allison&family=Parisienne&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
+    <title>Pride & Prejudice</title>
+    <style>
+      body {
+        background-color: bisque;
+      }
+      br {
+        margin: 50px;
+      }
+      h1 {
+        font-family: "Parisienne", "Allison", cursive;
+        top: 0;
+        background-color: #f8d7da !important;
+        padding: 10px;
+        z-index: 1;
+        position: relative;
+      }
+      h3 {
+        font-family: "Parisienne", "Allison", cursive;
+      }
+      img {
+        width: 100%;
+        margin: 0;
+      }
+      hr {
+        opacity: 0.1;
+        margin: 100px;
+      }
+      a {
+        text-decoration: none;
+        margin-top: 50px;
+        color: rgb(188, 207, 248);
+      }
+
+      li {
+        list-style-type: none;
+        margin: 20px;
+      }
+      small {
+        opacity: 0.8;
+        font-size: 20px;
+      }
+      i {
+        font-size: small;
+      }
+      #block-quote {
+        animation-duration: 3s;
+        animation-name: slidein;
+      }
+
+      @keyframes slidein {
+        from {
+          margin-left: 100%;
+          width: 300%;
+        }
+
+        to {
+          margin-left: 0%;
+          width: 100%;
+        }
+      }
+      .invisable {
+        opacity: 0;
+      }
+      .large-height {
+        margin-top: 45%;
+      }
+      .background-image-1 {
+        background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/084/582/original/grass-background.jpg?1685993686");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 0.8;
+        max-width: 100%;
+      }
+      .background-image-2 {
+        background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/084/581/original/flower-background.jpg?1685993680");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 0.8;
+        max-width: 100%;
+      }
+      .header-card {
+        border: none;
+        border-radius: 0;
+      }
+      .font {
+        font-family: "Parisienne", "Allison", cursive;
+      }
+      .blockquote {
+        opacity: 0.7;
+      }
+      .body-paragraph {
+        margin: 50px;
+      }
+      .carousel-caption {
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 10px;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+      }
+
+      .title-container {
+        opacity: 0;
+        transition: opacity 1.5s ease-in;
+      }
+
+      .title-container.show {
+        opacity: 1;
+      }
+      .grey-text {
+        color: slategray;
+      }
+      .margin-big-top {
+        margin-top: 90px;
+      }
+      .container {
+        position: relative;
+      }
+    </style>
+  </head>
+  <body class="bg-body-secondary">
+    <!--Title SECTION-->
+
+    <div class="card text-bg-dark header-card shadow">
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/084/594/original/movie-cover.jpg?1685994226"
+        class="card-img"
+        alt="..."
+      />
+      <div class="card-img-overlay title-container">
+        <h1
+          class="card-title display-1 bg-body-secondary text-center mb-5 p-5 d-block fade-in shadow-lg text-shadow grey-text large-height border border-rounded"
+        >
+          Pride & Prejudice
+        </h1>
+      </div>
+    </div>
+
+    <!--END-->
+    <hr class="invisable" />
+
+    <!--VIDEO START-->
+    <div class="container">
+      <div
+        class="ratio ratio-21x9 d-flex align-items-center shadow rounded justify-content-center mb-5"
+      >
+        <div class="video-container">
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/Ur_DIHs92NM"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            class="rounded shadow border"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <hr class="invisable" />
+    <!--END-->
+    <div class="container background-image-1 shadow p-5">
+      <div class="row">
+        <div class="col-md-6">
+          <!--Carousel Start-->
+          <br />
+          <div class="container d-flex justify-content-center mb-5">
+            <div
+              id="carouselExampleCaptions"
+              class="carousel slide carousel-fade"
+              style="width: 90%"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="3"
+                  aria-label="Slide 4"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="4"
+                  aria-label="Slide 5"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="5"
+                  aria-label="Slide 6"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/084/590/original/eliza-bennet.jpg?1685993876"
+                    class="d-block w-100 img-fluid rounded"
+                    alt="Elizabeth Bennet"
+                  />
+                  <div class="carousel-caption d-none d-lg-block">
+                    <h5>Elizabeth Bennet</h5>
+                    <p>
+                      "You have bewitched me body and soul, and I love, I love,
+                      I love you."
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/084/589/original/mr-darcy.jpg?1685993870"
+                    class="d-block w-100 img-fluid rounded"
+                    alt="Mr. Darcy"
+                  />
+                  <div class="carousel-caption d-none d-lg-block">
+                    <h5>Mr. Darcy</h5>
+                    <p>"My good opinion once lost is lost forever."</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/084/588/original/jane-bennet.jpg?1685993865"
+                    class="d-block w-100 img-fluid rounded"
+                    alt="Jane Bennet"
+                  />
+                  <div class="carousel-caption d-none d-lg-block">
+                    <h5>Jane Bennet</h5>
+                    <p>
+                      "I always deserve the best treatment because I never put
+                      up with any other."
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/084/587/original/mr-bingley2.jpg?1685993860"
+                    class="d-block w-100 img-fluid rounded"
+                    alt="Mr. Bingley"
+                  />
+                  <div class="carousel-caption d-none d-lg-block">
+                    <h5>Mr. Bingley</h5>
+                    <p>
+                      "I have been meditating on the very great pleasure which a
+                      pair of fine eyes in the face of a pretty woman can
+                      bestow."
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/084/586/original/lady-catherine.jpg?1685993853"
+                    class="d-block w-100 img-fluid rounded"
+                    alt="Lady Catherine de Bourgh"
+                  />
+                  <div class="carousel-caption d-none d-lg-block">
+                    <h5>Lady Catherine de Bourgh</h5>
+                    <p>
+                      "I take no leave of you, Miss Bennet. I send no
+                      compliments to your mother. You deserve no such attention.
+                      I am most seriously displeased."
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/084/597/original/miss-lucas.jpg?1685994578"
+                    class="d-block w-100 img-fluid rounded"
+                    alt="Charlotte Lucas"
+                  />
+                  <div class="carousel-caption d-none d-lg-block">
+                    <h5>Charlotte Lucas</h5>
+
+                    <p>
+                      "I ask only a comfortable home; and considering Mr.
+                      Collins's character, connections, and situation in life, I
+                      am convinced that my chance of happiness with him is as
+                      fair as most people can boast on entering the marriage
+                      state."
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <!--END-->
+        </div>
+        <div class="col-md-6">
+          <!--DESCRIPTION START-->
+          <br />
+          <div class="container justify-content-center d-flex">
+            <div class="card shadow" style="width: 90%">
+              <div class="card-body">
+                <h5
+                  class="card-title font text-center display-4 grey-text margin-big-top"
+                >
+                  Synopsis
+                </h5>
+                <hr />
+                <div class="card-text body-paragraph m-5 grey-text">
+                  <p>
+                    "Pride & Prejudice" is a captivating movie adaptation of
+                    Jane Austen's beloved novel, released in 2005. Directed by
+                    Joe Wright, this period drama beautifully captures the
+                    essence of Austen's 1813 novel and transports viewers to
+                    early 19th-century England. Starring Keira Knightley as the
+                    spirited Elizabeth Bennet and Matthew Macfadyen as the
+                    brooding Mr. Darcy, the film explores themes of societal
+                    expectations, love, and personal growth.
+                  </p>
+                  <p>
+                    Upon its release, "Pride & Prejudice" was met with critical
+                    acclaim and resonated with audiences worldwide. The film
+                    received widespread praise for its stunning cinematography,
+                    meticulous attention to detail in production design, and its
+                    faithful adaptation of Austen's story. Keira Knightley's
+                    portrayal of Elizabeth Bennet was particularly lauded,
+                    earning her an Academy Award nomination for Best Actress.
+                    The chemistry between Knightley and Macfadyen, along with
+                    the supporting cast's stellar performances, brought the
+                    characters to life and contributed to the film's success.
+                  </p>
+                  <p>
+                    Beyond its visual and acting merits, "Pride & Prejudice"
+                    also struck a chord with viewers due to its timeless themes
+                    and universal appeal. It skillfully explored the
+                    complexities of societal expectations, class divisions, and
+                    the transformative power of love. The film's success can be
+                    attributed not only to its faithful adaptation of Austen's
+                    story but also to its ability to resonate with contemporary
+                    audiences, ensuring that even those unfamiliar with the
+                    source material could appreciate its depth and charm.
+                  </p>
+                  <p>
+                    Overall, "Pride & Prejudice" (2005) stands as a remarkable
+                    film that showcases the enduring power of Austen's work and
+                    captures the hearts of viewers through its compelling
+                    storytelling, outstanding performances, and breathtaking
+                    visuals. Its critical acclaim and wide reception cement its
+                    status as a beloved adaptation that continues to enchant
+                    audiences, making it a must-watch for fans of romantic
+                    period dramas and classic literature alike.
+                  </p>
+                  <br />
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+          <!--END-->
+        </div>
+      </div>
+    </div>
+    <hr class="invisable" />
+    <!--QUOTE-->
+    <div id="block-quote">
+      <figure class="text-center text-shadow shadow m-5 p-5 border">
+        <blockquote class="blockquote">
+          <p>
+            "It is a truth universally acknowledged, that a single man in
+            possession of a good fortune, must be in want of a wife,"
+          </p>
+        </blockquote>
+        <figcaption class="blockquote-footer">
+          Jane Austen <cite title="Source Title">Pride & Prejudice</cite>
+        </figcaption>
+      </figure>
+    </div>
+    <!--END-->
+    <hr class="invisable" />
+    <div class="container background-image-2 shadow p-5 p-5">
+      <hr class="invisable" />
+      <!-- Thumbnail Start-->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/084/585/original/father.jpg?1685993832"
+              class="img-fluid shadow-md mx-auto m-5 d-flex justify-content-around border shadow rounded"
+              alt=""
+            />
+          </div>
+          <div class="col-sm-6">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/084/584/original/officer.jpg?1685993824"
+              class="img-fluid shadow-md mx-auto m-5 d-flex justify-content-around border shadow rounded"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/084/598/original/walking.jpg?1685995420"
+              class="img-fluid shadow-md mx-auto m-5 d-flex justify-content-around border shadow rounded"
+              alt=""
+            />
+          </div>
+          <div class="col-sm-6">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/084/593/original/gathered.jpg?1685993899"
+              class="img-fluid shadow-md mx-auto m-5 d-flex justify-content-around border shadow rounded"
+              alt=""
+            />
+          </div>
+          <div class="col-sm-6">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/084/591/original/outside.jpg?1685993884"
+              class="img-fluid shadow-md mx-auto m-5 d-flex justify-content-around border shadow rounded"
+              alt=""
+            />
+          </div>
+          <div class="col-sm-6">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/084/592/original/mr-bingley.jpg?1685993892"
+              class="img-fluid shadow-md mx-auto m-5 d-flex justify-content-around border shadow rounded"
+              alt=""
+            />
+            <hr class="invisable" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End-->
+    <!--BUTTON START-->
+    <hr class="invisable" />
+    <div class="d-grid col-6 mx-auto">
+      <a
+        href="https://www.focusfeatures.com/pride_and_prejudice"
+        target="_blank
+      "
+        class="btn btn-secondary btn-outline-dark btn-lg text-center font fs-1 d-flex justify-content-center m-5"
+        tabindex="-1"
+        role="button"
+        >Visit the Official Movie Website</a
+      >
+    </div>
+    <hr class="invisable" />
+    <!--END-->
+
+    <hr />
+    <!--Signature Start-->
+
+    <div class="m-5 text-center">
+      <h3><small> Coded with love by Vivacity</small></h3>
+      <i class="fa-solid fa-heart fa-beat"></i>
+    </div>
+    <!--END-->
+  </body>
+
+  <script>
+    setTimeout(function () {
+      document.querySelector(".title-container").classList.add("show");
+    }, 1000);
+  </script>
+</html>
